@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<span class="pull-right"><a class="btn btn-danger remove" href="/destroy/{{article.id}}">Le bouton magique</a></span>
+
+<h1>{{article.title}}</h1>
+
+    <img src="{{article.img}}" alt="img">
+
+
+<p>{{article.content}}</p>
+
+<span class="date">
+Mis à jour {{article.updated.getDate()}} / {{article.updated.getMonth() +1}} / {{article.updated.getFullYear()}}
+</span>
+
+<div class="pull-right">
+<a href="/edit/{{article.id}}" class="btn btn-default">Modifier</a>
+</div>
+
+{% endblock %}

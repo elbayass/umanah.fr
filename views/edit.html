@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<form role="form" action="/update/{{article.id}}" method="post" enctype="multipart/form-data">
+
+<div class="form-group">
+<label for="titre">Titre</label>
+<input type="text" name="titre" value="{{article.title}}" class="form-control" placeholder="titre de l'article" required>
+</div>
+
+<div class="form-group">
+    <label for="titre">Titre</label>
+    <label for="contenu">Contenu de l'article</label>
+    <textarea name="contenu" class="form-control" placeholder="Contenu de l'article" rows="3" required>{{article.content}}</textarea>
+
+    <label for="img">Telecharger une image</label>
+    <input type="file" class="form-control-file" name="img">
+</div>
+
+<button type="submit" class="btn btn-default">Modifier </button>
+
+</form>
+
+
+{% endblock %}
