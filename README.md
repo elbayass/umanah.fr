@@ -1,4 +1,3 @@
-# blog
-blog pour le projet
+# Ce blog n'est pas fini ! 
+blog pour le projet de fin d'année
 
-Ce blog n'est pas fini ! 
